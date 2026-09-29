@@ -1,6 +1,10 @@
 import re
 
-
+def main():
+    print("введите выражение в формате <число> <оператор> <число>")
+    str = input()
+    result = parser(str)
+    print("Ответ: " + result + "\n")
 
 def parser(s: str):
     if not isinstance(s, str):
